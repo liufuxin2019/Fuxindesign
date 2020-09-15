@@ -135,3 +135,9 @@
   left: 4px;
   top: 4px;
 }
+
+canvas {
+  display: block;
+  max-width: 800px;
+  margin: 60px auto;
+}

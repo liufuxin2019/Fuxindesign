@@ -4,15 +4,16 @@
 }
 
 :root {
-  font-size: 14.4px;
-  font-family: San Francisco, PingFang SC, Arial;;
+  font-size: 16px;
+  font-family: "HiraginoSans-W1";
+  font-weight: 100;
   line-height: 1.618;
-  font-weight: 200;
 }
 
 body {
   background-color: #fff;
-  color: #1a1a1a;
+  color: #8C8C8C;
+  text-align: justify;
 }
 
 a {
@@ -73,6 +74,12 @@ img{
   vertical-align: middle;
 }
 
+.left {
+  position: absolute;
+  margin:0 auto;
+  padding: 10px;
+}
+
 header {
   text-align: center;
   padding-bottom: 3rem;
@@ -81,8 +88,8 @@ header {
 h1 {
   font-size: 2.6rem;
   line-height: 1.2em;
-  padding-bottom: 1rem;
-  font-weight: 600;
+  padding-bottom: 0rem;
+  font-weight: 400;
 }
 
 svg {
@@ -146,13 +153,12 @@ image {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  width: 300px;
-  height: 200px;
-  margin: 5px;
+  width: 420px;
+  height: 280px;
+  margin: 10px;
   cursor: pointer;
   background-color: #f5f5f5;
   border-radius: 2px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), inset 0 0px 0px 1px rgba(0, 0, 0, 0.07);
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
@@ -216,4 +222,86 @@ button.light {
 }
 .section--pinklow{
   background: #ECE0DD;
+}
+
+
+
+/*chart*/
+
+#chart {
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+  padding-left: 100px;
+  display: block;
+  font-size: 10px;
+}
+#chart #numbers {
+  width: 5px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: center;
+}
+#chart #numbers li {
+  text-align: center;
+  padding-right: 1em;
+  list-style: none;
+  height: 29px;
+  border-bottom: 1px solid #A2A2A2;
+  position: relative;
+  bottom: 22px;
+}
+#chart #numbers li:last-child {
+  height: 30px;
+}
+#chart #numbers li span {
+  color: #A2A2A2;
+  position: absolute;
+  bottom: 0;
+  right: 22px;
+  margin: -8px;
+}
+#chart #bars {
+  display: inline-block;
+  width: 600px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+#chart #bars li {
+  display: table-cell;
+  width: 80px;
+  height: 300px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+#chart #bars li .bar {
+  display: block;
+  width: 30px;
+  margin-left: 25px;
+  margin-right: 15px;
+  background-image: linear-gradient(#63CFF4, #B0FFD7);
+  position: absolute;
+  bottom: 0;
+}
+#chart #bars li .bar:hover {
+  background: #63CFF4;
+  cursor: pointer;
+}
+#chart #bars li .bar:hover:before {
+  color: #A2A2A2;
+  content: attr(data-percentage) '%';
+  position: relative;
+  bottom: 20px;
+}
+#chart #bars li span {
+  width: 80px;
+  position: absolute;
+  bottom: -2em;
+  left: 0;
+  text-align: center;
+  color:#A2A2A2;
 }
