@@ -212,7 +212,11 @@ button.light {
 }
 
 
-
+.section--grain{
+  background-image: url("bg.png");
+  background-color: #cccccc;
+  background-size: cover;
+}
 .section--red b{
   color:#fff;
 }
