@@ -220,6 +220,9 @@ button.light {
 .section--red b{
   color:#fff;
 }
+.section--blue{
+  background: linear-gradient( #04212F, #02121A);
+}
 
 .section--grey{
   background: #f6f5f5;
