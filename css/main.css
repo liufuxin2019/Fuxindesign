@@ -74,6 +74,15 @@ img{
   vertical-align: middle;
 }
 
+.base{
+  position: absolute;
+  z-index: 1;
+}
+.float{
+  position: relative;
+  z-index: 2;
+}
+
 .left {
   position: absolute;
   margin:0 auto;
