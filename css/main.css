@@ -164,7 +164,7 @@ image {
   overflow: hidden;
   width: 504px;
   height: 336px;
-  margin: 10px;
+  margin: 0px;
   cursor: pointer;
   background-color: white;
   border-radius: 2px;
@@ -222,22 +222,22 @@ button.light {
 
 
 .section--grain{
-  background-image: url("bg.png");
+  background-image: url("grains.png");
   background-color: #cccccc;
   background-size: cover;
 }
 .section--red b{
   color:#fff;
 }
-.section--blue{
-  background: linear-gradient( #04212F, #02121A);
+.section--greybg{
+  background: linear-gradient( #36455B, #506583);
 }
 
 .section--grey{
   background: #f6f5f5;
 }
-.section--green{
-  background: linear-gradient( #739674, #93B385);
+.section--yellow{
+  background: linear-gradient( #FFB656, #FDC479);
 }
 .section--pinklow{
   background: #ECE0DD;
