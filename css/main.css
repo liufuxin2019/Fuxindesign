@@ -109,6 +109,13 @@ svg {
   height: 100%;
 }
 
+.screencast{
+  width: 1280px;
+  height: 720px;
+  display: table;
+  margin: 0 auto;
+}
+
 circle {
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
