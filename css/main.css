@@ -124,6 +124,14 @@ svg {
   height: 100%;
 }
 
+table{
+  width: 100%;
+}
+th,td{
+  width: 33.33%;
+  text-align: right;
+}
+
 circle {
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
@@ -256,6 +264,10 @@ button.light {
 }
 .section--pinklow{
   background: #ECE0DD;
+}
+
+.section--yell{
+  background: #FCFAF7;
 }
 
 
