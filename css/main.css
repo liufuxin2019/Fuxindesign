@@ -83,6 +83,20 @@ img{
   z-index: 2;
 }
 
+
+.base1{
+  position: absolute;
+  z-index: 1;
+}
+float1{
+  position: relative;
+  z-index: 2;
+}
+.top{
+  position: relative;
+  z-index: 3;
+}
+
 .left {
   position: absolute;
   margin:0 auto;
@@ -268,6 +282,10 @@ button.light {
 
 .section--yell{
   background: #FCFAF7;
+}
+
+.section--pink{
+  background: linear-gradient(#DDBEA9, #CB997E);
 }
 
 
