@@ -83,15 +83,6 @@ img{
   z-index: 2;
 }
 
-
-.base1{
-  position: absolute;
-  z-index: 1;
-}
-float1{
-  position: relative;
-  z-index: 2;
-}
 .top{
   position: relative;
   z-index: 3;
@@ -286,6 +277,10 @@ button.light {
 
 .section--pink{
   background: linear-gradient(#DDBEA9, #CB997E);
+}
+
+.section--green{
+  background: linear-gradient(#72798C, #555B6E);
 }
 
 
