@@ -192,7 +192,7 @@ image {
   overflow: hidden;
   width: 504px;
   height: 336px;
-  margin: 0px;
+  margin: 10px;
   cursor: pointer;
   background-color: white;
   border-radius: 2px;
@@ -280,7 +280,7 @@ button.light {
 }
 
 .section--green{
-  background: linear-gradient(#72798C, #555B6E);
+  background: linear-gradient(#16697A, #186E75);
 }
 
 
