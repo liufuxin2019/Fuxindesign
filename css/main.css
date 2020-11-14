@@ -291,6 +291,12 @@ button.light {
   background: linear-gradient(#16697A, #186E75);
 }
 
+.section--zishi{
+  background-image: url("zishi.png");
+  background-color: #cccccc;
+  background-size: cover;
+}
+
 
 
 /*chart*/
