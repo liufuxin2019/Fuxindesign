@@ -9,8 +9,35 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+</style>
 </head>
-<body translate="no">
+
+<body>
   <section class="section section--menu" id="Prospero">
       <nav class="menu menu--prospero">
         <ul class="menu__list">
@@ -24,17 +51,20 @@
     </section>
   <div class="container">
 <br/>
-<image class="float" src="img/wepark/space.png"></image>
+<image src="img/wepark/space.png"></image>
     <header><image src="img/mainpage.gif"></image></header>
+<div>
+  <image src="img/profile.jpg" style="max-width: 240px" align="right" hspace="10" vspace="10"></image>
+  <div style="clear: none;">
   Hi, my name is Fuxin, I am a New York based UI/UX Designer, Game Designer and Photographer and have a Bachelor Degree of Vehicle Engineering from Xi'an Jiaotong University. I am interested in many different kinds of things, such as motion capture, escape game, HMI design and evaluation, etc. As a second year candidate in MFA Design & Technology at Parsons School of Design, I will be graduating from my program in May 2020.<br><br/>
 
   If you are interested in my works, please feel free to contact me through these ways:<br>
-
+</div>
+</div>
   <a href="mailto:liuf450@newschool.edu?&cc=liufuxinmail@vip.qq.com" target="_Blank">Email</a> | <a href="https://www.linkedin.com/in/fuxin-liu/" target="_Blank">Linkedin</a> | <a href="https://github.com/liufuxin2019" target="_Blank">Github</a> | <a href="https://dribbble.com/Fuxinliu" target="_Blank">Dribbble</a><br> 
-  <br/>
+  <br>
   You can also view my <a href="EnResume.pdf" target="_Blank">resume</a>.
   </div>
-</header>
 </div>
 <!--nav-->
 <script src="js/classienav.js"></script>
