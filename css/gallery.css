@@ -22,8 +22,8 @@
 }
 
 .grid__item {
-	width: 270px;
-	padding: 10px;
+	width: 360px;
+	padding: 5px;
 }
 
 .grid__item--current {
@@ -97,7 +97,7 @@
 
 .original {
 	position: relative;
-	z-index: 120;
+	z-index: 200;
 	display: block;
 	margin: auto 0;
 	object-fit: contain;
@@ -174,7 +174,7 @@
 	padding: 0;
 	cursor: pointer;
 	vertical-align: top;
-	color: #f4b0a4;
+	color: #ff7e69;
 	border: none;
 	background: none;
 }
@@ -218,10 +218,11 @@
 	font-weight: bold;
 	margin: 0;
 	padding: 1em 2em;
-	color: #fff;
-	border: 0px solid #fff;
+	color: #ff7e69;
+	border: 0px solid #ff7e69;
 	border-radius: 2em;
 	background: none;
+	z-index: 9999;
 }
 
 .button--view {

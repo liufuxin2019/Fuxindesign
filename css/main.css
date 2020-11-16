@@ -75,7 +75,7 @@ p {
 }
 
 img{
-  max-width: 940px;
+  max-width: 100%;
   margin:0 auto;
   padding: 0rem 0rem;
   display: table-cell;
@@ -293,7 +293,7 @@ button.light {
 
 .section--zishi{
   background-image: url("zishi.png");
-  background-color: #cccccc;
+  background-color: #ffffff;
   background-size: cover;
 }
 
