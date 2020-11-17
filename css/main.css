@@ -83,10 +83,12 @@ img{
 }
 
 .base{
+  width: 940px;
   position: absolute;
   z-index: 1;
 }
 .float{
+  width: 940px;
   position: relative;
   z-index: 2;
 }
