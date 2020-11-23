@@ -61,6 +61,7 @@ p {
   margin: 0 auto;
   padding: 0rem 2rem;
   text-align: left;
+  color: #fff;
 }
 
 .container {
@@ -299,6 +300,9 @@ button.light {
   background-size: cover;
 }
 
+.section--mainpage{
+  background-image: url("MainPage.gif")
+}
 
 
 /*chart*/
