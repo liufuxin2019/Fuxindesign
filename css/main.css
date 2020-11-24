@@ -311,6 +311,15 @@ button.light {
   background-image: url("MainPage.gif")
 }
 
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #7BDFF2;
+  color: white;
+  text-align: center;
+}
 
 /*chart*/
 
