@@ -29,6 +29,7 @@ a:hover {
 p {
   font-size: 1.1rem;
   color: rgba(26, 26, 26, 0.5);
+  padding-bottom: 24px;
 }
 
 .subtitle{
@@ -160,6 +161,8 @@ circle {
 
 b{
   color:#ff7e69;
+  padding-bottom: 24px;
+  font-size: 22px;
 }
 
 text {
