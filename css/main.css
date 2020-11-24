@@ -207,7 +207,11 @@ image {
   cursor: pointer;
   background-color: #fff;
   border-style: solid;
-  border-color: #c0c0c0; 
+  outline-style: solid;
+  outline-color: #B2BFF7;
+  outline-width: 1px;
+  outline-offset: 4px;
+  border-color: #F2B5D4; 
   border-radius: 2px;
   border-width: 1px;
   -webkit-transform: translateZ(0);
