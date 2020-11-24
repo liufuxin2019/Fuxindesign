@@ -308,7 +308,11 @@ button.light {
 }
 
 .section--mainpage{
-  background-image: url("MainPage.gif")
+  background-image: url("MainPage.gif");
+  margin: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer {
