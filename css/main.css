@@ -212,7 +212,7 @@ image {
   outline-width: 1px;
   outline-offset: 4px;
   border-color: #F2B5D4; 
-  border-radius: 2px;
+  /*border-radius: 2px;*/
   border-width: 1px;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
