@@ -1,165 +1,381 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
-<title>Fuxin's portfolio</title>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-<link rel="stylesheet" type="text/css" href="css/component.css" />
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.row {
-  display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-</style>
+  <!--<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>相册</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/loading.css" />
+  <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <script src="js/modernizr-custom.js"></script>
 </head>
-<body>
-<section class="section section--menu" id="Prospero" style="top: 0;">
+<section class="section section--menu" id="Prospero">
       <nav class="menu menu--prospero">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='index.html';},150);">projects</a></li>
-          <li class="menu__item menu__item--current"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='gallery.html';},150);">gallery</a></li>
-          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='about.html';},150);">about</a></li>
-          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='blogs_cn.html';},150);">others</a></li>
-          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='index_cn.html';},150);">中文</a></li>
+          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='index_cn.html';},150);">项目</a></li>
+          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='about_cn.html';},150);">关于我</a></li>
+          <li class="menu__item menu__item--current"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='gallery_cn.html';},150);">相册</a></li>
+          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='others_cn.html';},150);">其他</a></li>
+          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='gallery.html';},150);">EN</a></li>
         </ul>
       </nav>
 </section>
-<!-- Header -->
-<div class="container">
-	<br/>
-<image src="img/wepark/space.png"></image>
-<div class="header" id="myHeader">
-  <h1>Image Grid</h1>
-  <p>Click on the buttons to change the grid view.</p>
-  <button class="btn" onclick="one()">1</button>
-  <button class="btn active" onclick="two()">2</button>
-  <button class="btn" onclick="four()">4</button>
-</div>
+<body class="demo-6">
+    <image src="img/wepark/space.png"></image>
+    <image src="img/gallery.png"></image>
+<div class="gallerycontainer">
+    <header class="codrops-header">
+      <p>相册中包含从2015年至今的摄影作品。</p>
+    </header>
+    <div class="content">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+      <script>
+        window.onload = function(){
+          setTimeout(function(){
+            var spinner = document.getElementsByClassName("spinner")[0];
+            spinner.className="spinner fadeout" ;
+            setTimeout(function(){spinner.style.display="none"},100)
+            },100)
+        }
+      </script>
+      <div class="content">
+      <div class="grid">
+        <div class="grid__item" data-size="1280x853">
+          <a href="img/photos/Adventure.jpg" class="img-wrap"><img src="img/photos/Adventure.jpg" alt="img08" />
+            <div class="description description--grid">Adventure | 2016.07 at Singapore</div>
+          </a>
+        </div>
 
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
+        <div class="grid__item" data-size="865x1280">
+          <a href="img/photos/Bird.jpg" class="img-wrap"><img src="img/photos/Bird.jpg" alt="img09" />
+            <div class="description description--grid">Sheltering | 2019.03 at Cayo Iguana, Trinidad, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1440x1440">
+          <a href="img/photos/Sunflower.jpg" class="img-wrap"><img src="img/photos/Sunflower.jpg" alt="img05" />
+            <div class="description description--grid">Rust and Sunflower | 2019.03 at Havana, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x1280">
+          <a href="img/photos/Cambridge.jpg" class="img-wrap"><img src="img/photos/Cambridge.jpg" alt="img10" />
+            <div class="description description--grid">River Cam | 2016.08 at Cambridge, UK</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x853">
+          <a href="img/photos/Performers.jpg" class="img-wrap"><img src="img/photos/Performers.jpg" alt="img01" />
+            <div class="description description--grid">A Rest | 2019.03 at Havana, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="865x1280">
+          <a href="img/photos/Dog.jpg" class="img-wrap"><img src="img/photos/Dog.jpg" alt="img09" />
+            <div class="description description--grid">Encage | 2015.03 at Street Dog Shelter, Xi'an, Shaanxi</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Chempedad.jpg" class="img-wrap"><img src="img/photos/Chempedad.jpg" alt="img11" />
+            <div class="description description--grid">Hands | 2017.07 at Penang, Malaysia</div>
+          </a>
+        </div>
+        
+        <div class="grid__item" data-size="958x1280">
+          <a href="img/photos/Deer.jpg" class="img-wrap"><img src="img/photos/Deer.jpg" alt="img02" />
+            <div class="description description--grid">Deer, Light, Forest | 2018.04 at Nara, Japan</div>
+          </a>
+        </div>
+        
+        <div class="grid__item" data-size="1280x1131">
+          <a href="img/photos/Feeding.jpg" class="img-wrap"><img src="img/photos/Feeding.jpg" alt="img05" />
+            <div class="description description--grid">Worship | 2015.01 at Kending, Taiwan</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x857">
+          <a href="img/photos/Girl.jpg" class="img-wrap"><img src="img/photos/Girl.jpg" alt="img06" />
+            <div class="description description--grid">Girl and Ocean | 2018.04 at Kamakura, Japan</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Classroom.jpg" class="img-wrap"><img src="img/photos//Classroom.jpg" alt="img01" />
+            <div class="description description--grid">Little World | 2014.03 at Lanjia Village, Xi'an, Shaanxi</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x1280">
+          <a href="img/photos/Window.jpg" class="img-wrap"><img src="img/photos/Window.jpg" alt="img07" />
+            <div class="description description--grid">Window Shopping | 2019.03 at Havana, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x853">
+          <a href="img/photos/Jellyfish.jpg" class="img-wrap"><img src="img/photos/Jellyfish.jpg" alt="img08" />
+            <div class="description description--grid">Jellyfishes | 2018.04 at Osaka, Japan</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="865x1280">
+          <a href="img/photos/Flower.jpg" class="img-wrap"><img src="img/photos/Flower.jpg" alt="img09" />
+            <div class="description description--grid">Spring Day | 2018.03 at Shanghai</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x1280">
+          <a href="img/photos/Penguin.jpg" class="img-wrap"><img src="img/photos/Penguin.jpg" alt="img10" />
+            <div class="description description--grid">Wet | 2015.01 at Kending, Taiwan</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x853">
+          <a href="img/photos/Skeleton.jpg" class="img-wrap"><img src="img/photos/Skeleton.jpg" alt="img08" />
+            <div class="description description--grid">Fight | 2018.12 at New York, US</div>
+          </a>
+        </div>        
+
+        <div class="grid__item" data-size="1280x1280">
+          <a href="img/photos/Tree.jpg" class="img-wrap"><img src="img/photos/Tree.jpg" alt="img10" />
+            <div class="description description--grid">The Light of Life | 2015.07 at Tokyo, Japan</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Volunteer.jpg" class="img-wrap"><img src="img/photos/Volunteer.jpg" alt="img11" />
+            <div class="description description--grid">Woman, Cigarette, Puppy | 2015.03 at Street Dog Shelter, Xi'an, Shaanxi</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x853">
+          <a href="img/photos/Thai.jpg" class="img-wrap"><img src="img/photos/Thai.jpg" alt="img01" />
+            <div class="description description--grid">Woman | 2017.07 at Maasai Village, Chiangmai, Thailand</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="958x1280">
+          <a href="img/photos/Rainyday.jpg" class="img-wrap"><img src="img/photos/Rainyday.jpg" alt="img02" />
+            <div class="description description--grid">Silence in the Rain | 2019.05 at Boston, US</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="837x1280">
+          <a href="img/photos/Dolphin.jpg" class="img-wrap"><img src="img/photos/Dolphin.jpg" alt="img03" />
+            <div class="description description--grid">Knot | 2019.03 at Huston, US</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x857">
+          <a href="img/photos/Artist.jpg" class="img-wrap"><img src="img/photos/Artist.jpg" alt="img06" />
+            <div class="description description--grid">The Artist | 2019.03 at Havana, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x961">
+          <a href="img/photos/Whale.jpg" class="img-wrap"><img src="img/photos/Whale.jpg" alt="img04" />
+            <div class="description description--grid">The Spring | 2019.05 at Boston, US</div>
+          </a>
+        </div>
+
+
+        <div class="grid__item" data-size="1280x1280">
+          <a href="img/photos/Crabs.jpg" class="img-wrap"><img src="img/photos/Crabs.jpg" alt="img07" />
+            <div class="description description--grid">Crab's Talk | 2019.03 at Cayo Iguana, Trinidad, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x853">
+          <a href="img/photos/Farmer.jpg" class="img-wrap"><img src="img/photos/Farmer.jpg" alt="img08" />
+            <div class="description description--grid">Cigar and Farmer | 2019.03 at Viñales, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="865x1280">
+          <a href="img/photos/Lizard.jpg" class="img-wrap"><img src="img/photos/Lizard.jpg" alt="img09" />
+            <div class="description description--grid">Waiting in Silence | 2019.03 at Cayo Iguana, Trinidad, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x1280">
+          <a href="img/photos/Lizards.jpg" class="img-wrap"><img src="img/photos/Lizards.jpg" alt="img10" />
+            <div class="description description--grid">Watch Out | 2019.03 at Cayo Iguana, Trinidad, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/HavanaStreet.jpg" class="img-wrap"><img src="img/photos/HavanaStreet.jpg" alt="img01" />
+            <div class="description description--grid">Peddlers | 2019.03 at Havana, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Fruits.jpg" class="img-wrap"><img src="img/photos/Fruits.jpg" alt="img03" />
+            <div class="description description--grid">Fresh | 2019.03 at Havana, Cuba</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Noodles.jpg" class="img-wrap"><img src="img/photos/Noodles.jpg" alt="img04" />
+            <div class="description description--grid">Dried Noodles | 2016.03 at Hanzhong, Shaanxi</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Transfer.jpg" class="img-wrap"><img src="img/photos/Transfer.jpg" alt="img05" />
+            <div class="description description--grid">Shuttle | 2016.04 at Chongqing</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Bike.jpg" class="img-wrap"><img src="img/photos/Bike.jpg" alt="img08" />
+            <div class="description description--grid">The Wind | 2016.08 at Edinburg, UK</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Sky.jpg" class="img-wrap"><img src="img/photos/Sky.jpg" alt="img09" />
+            <div class="description description--grid">Salt | 2017.06 at Chakayan Lake, Qinghai</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Glass.jpg" class="img-wrap"><img src="img/photos/Glass.jpg" alt="img10" />
+            <div class="description description--grid">The Net | 2018.09 at New York, US</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Tram.jpg" class="img-wrap"><img src="img/photos/Tram.jpg" alt="img11" />
+            <div class="description description--grid">The Tram | 2018.09 at New York, US</div>
+          </a>
+        </div>
+
+        <div class="grid__item" data-size="1280x850">
+          <a href="img/photos/Cat.jpg" class="img-wrap"><img src="img/photos/Cat.jpg" alt="img01" />
+            <div class="description description--grid">Escape | 2019.03 at Cienfuegos</div>
+          </a>
+        </div>
+
+      </div>
+      <!-- /grid -->
+      <div class="preview">
+        <button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+        <div class="description description--preview"></div>
+      </div>
+      <!-- /preview -->
+      <image src="img/wepark/space.png"></image>
+      <p style="text-align: center;"><a href="#top"> Back To Top</a></p>
+      <image src="img/wepark/space.png"></image>
+
+    </div>
   </div>
-  <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-  </div>  
-  <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-  </div>
-</div>
-</div>
+  <!-- /container -->
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function() {
+      var support = { transitions: Modernizr.csstransitions },
+        // transition end event name
+        transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+        transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+        onEndTransition = function( el, callback ) {
+          var onEndCallbackFn = function( ev ) {
+            if( support.transitions ) {
+              if( ev.target != this ) return;
+              this.removeEventListener( transEndEventName, onEndCallbackFn );
+            }
+            if( callback && typeof callback === 'function' ) { callback.call(this); }
+          };
+          if( support.transitions ) {
+            el.addEventListener( transEndEventName, onEndCallbackFn );
+          }
+          else {
+            onEndCallbackFn();
+          }
+        };
 
-<script>
-// Get the elements with class="column"
-var elements = document.getElementsByClassName("column");
+      new GridFx(document.querySelector('.grid'), {
+        imgPosition : {
+          x : 1,
+          y : -0.75
+        },
+        pagemargin : 50,
+        onOpenItem : function(instance, item) {
+          var win = {width: window.innerWidth, height: window.innerHeight};
+          instance.items.forEach(function(el) {
+            if(item != el) {
+              var delay = Math.floor(Math.random() * 150);
+                el.style.WebkitTransition = 'opacity .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1), -webkit-transform .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
+                el.style.transition = 'opacity .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1), transform .6s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
+              
+                el.style.WebkitTransform = 'translate3d(-' + win.width + 'px,0,0)';
+                el.style.transform = 'translate3d(-' + win.width + 'px,0,0)';
+                el.style.opacity = 0;
+            }
+          });
+        },
+        onCloseItem : function(instance, item) {
+          instance.items.forEach(function(el) {
+            if(item != el) {
+              var delay = Math.floor(Math.random() * 150);
+              el.style.WebkitTransition = 'opacity .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1), -webkit-transform .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
+              el.style.transition = 'opacity .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1), transform .3s ' + delay + 'ms cubic-bezier(.5,1,.2,1)';
 
-// Declare a loop variable
-var i;
 
-// Full-width images
-function one() {
-    for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "100%";  // IE10
-    elements[i].style.flex = "100%";
-  }
-}
+              el.style.WebkitTransform = 'translate3d(0,0,0)';
+              el.style.transform = 'translate3d(0,0,0)';
+              el.style.opacity = 1;
 
-// Two images side by side
-function two() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "50%";  // IE10
-    elements[i].style.flex = "50%";
-  }
-}
+              onEndTransition(el, function() {
+                el.style.transition = 'none';
+                el.style.WebkitTransform = 'none';
+              });
+            }
+          });
+        }
+      });
+    })();
+  </script>
 
-// Four images side by side
-function four() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "25%";  // IE10
-    elements[i].style.flex = "25%";
-  }
-}
+<!--nav-->
+<script src="js/classienav.js"></script>
+  <script src="js/clipboard.min.js"></script>
+  <script>
+    (function() {
+      [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+        var menuItems = menu.querySelectorAll('.menu__link'),
+          setCurrent = function(ev) {
+            ev.preventDefault();
 
-// Add active class to the current button (highlight it)
-var header = document.getElementById("myHeader");
-var btns = header.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
+            var item = ev.target.parentNode; // li
 
+            // return if already current
+            if( classie.has(item, 'menu__item--current') ) {
+              return false;
+            }
+            // remove current
+            classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+            // set current
+            classie.add(item, 'menu__item--current');
+          };
+
+        [].slice.call(menuItems).forEach(function(el) {
+          el.addEventListener('click', setCurrent);
+        });
+      });
+    })(window);
+  </script>
 </body>
-</html>
