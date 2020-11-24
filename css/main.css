@@ -208,10 +208,10 @@ image {
   background-color: #fff;
   border-style: solid;
   outline-style: solid;
-  outline-color: #B2BFF7;
-  outline-width: 1px;
-  outline-offset: 4px;
-  border-color: #F2B5D4; 
+  outline-color: #F2B5D4;
+  outline-width: 1px; 
+  outline-offset: 5px;
+  border-color: #7BDFF2; 
   /*border-radius: 2px;*/
   border-width: 1px;
   -webkit-transform: translateZ(0);
