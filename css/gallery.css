@@ -97,7 +97,7 @@
 
 .original {
 	position: relative;
-	z-index: 200;
+	z-index: 120;
 	display: block;
 	margin: auto 0;
 	object-fit: contain;
@@ -187,7 +187,7 @@
 
 .action--close {
 	position: fixed;
-	z-index: 150;
+	z-index:150;
 	top: 0;
 	right: 0;
 	padding: 1em;
@@ -218,11 +218,10 @@
 	font-weight: bold;
 	margin: 0;
 	padding: 1em 2em;
-	color: #ff7e69;
-	border: 0px solid #ff7e69;
+	color: #fff;
+	border: 0px solid #fff;
 	border-radius: 2em;
 	background: none;
-	z-index: 9999;
 }
 
 .button--view {
