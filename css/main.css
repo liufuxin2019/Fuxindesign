@@ -203,10 +203,13 @@ image {
   overflow: hidden;
   width: 600px;
   height: 400px;
-  margin: 40px;
+  margin: 20px;
   cursor: pointer;
   background-color: #fff;
+  border-style: dashed;
+  border-color: #c0c0c0; 
   border-radius: 2px;
+  border-width: 1px;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
