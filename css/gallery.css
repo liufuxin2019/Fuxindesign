@@ -176,11 +176,10 @@
 	padding: 0;
 	cursor: pointer;
 	vertical-align: top;
-	color: #ff7e69;
 	border: none;
 	background-image: url("closebutton.png");
 	background-size: 40%;
-	background-color: #f9f9f9;
+	background-color: transparent;
 	background-position: center;
 	background-repeat: no-repeat;
 }
