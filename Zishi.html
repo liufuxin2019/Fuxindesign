@@ -5,7 +5,6 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/zishi/icon.png"/>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <title>Zishi - User Interface Connected to the Smart Garment</title>
 <body>
@@ -16,6 +15,7 @@
           <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='about.html';},150);">about</a></li>
           <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='gallery.html';},150);">gallery</a></li>
           <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='others.html';},150);">others</a></li>
+          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='zishi_cn.html';},150);">中文</a></li>
         </ul>
       </nav>
     </section>
@@ -29,52 +29,116 @@
 </section>
 
 <section>
-  <div class="container">
+<div class="container">
+  <h2>Overview</h2>
 <image src="img/zishi/overview.png"></image>
+<h2 class="floattext" style="padding-top: 165px; padding-left: 385px;">Background</h2>
+<p class="floattext" style="padding-top: 260px; padding-left: 385px; width: 62%;" >Zishi is the pronunciation of Chinese word “姿式“, which means posture and formula. In this project, I mainly focus on guiding stroke patients in real-time postoperative rehabilitation through the interface connected to the smart garment.<br><br>Based on the actual rehabilitation scenarios of patients, zishi's interface is mainly presented on tablet computers and smart wearable devices.</p>
 <image src="img/zishi/background.png"></image>
+<h2 class="floattext" style="padding-top: 70px;">Problem</h2>
+<div class="floattext" style="width: 45%; padding-top: 165px;">When stroke patients receive rehabilitation training, they are often troubled by <b>Compensatory Movements</b>. <br><br>
+
+Compensatory movements can be defined as movements used habitually to achieve functional motor skills when a normal movement pattern has not been established or is unavailable. The existence of compensatory movements will greatly <b>reduce the effectiveness </b>of rehabilitation training, and even cause the patient to <b>suffer secondary injuries</b>.</div>
 <image src="img/zishi/problem.png"></image>
+<h2 class="floattext" style="padding-top: 440px; padding-left: 435px;">System</h2>
+<div class="floattext" style="padding-top: 535px; padding-left: 435px; width: 65%;">In order to reduce the impact of compensation on rehabilitation, zishi is equipped with a module soft sensor on the user's sternoclaviular joint and acromioclavicular joint, which can determine whether the user's movement is standard by monitoring the joint position.<br><br>Then the obtained judgment result is fed back to the patient through the user interface, sound and vibration, so as to provide assistance and guidance for the user's rehabilitation. Allows users to complete rehabilitation training at home alone when they cannot go to the hospital.</div>
 <image src="img/zishi/system.png"></image>
-<image src="img/zishi/feature.png"></image>
+<h2>New Features</h2><br>
+<h3>Sign Up Questionnaire</h3>
+<div>I added a questionnaire page when users are signing up to get a preliminary understanding of the patient's status and previous treatment, which lay a foundation for subsequent training recommendations.</div>
 <image src="img/zishi/signup.gif"></image>
-<image src="img/zishi/device.png"></image>
-<image src="img/zishi/device.gif"></image>
-<image src="img/zishi/schedule.png"></image>
-<image src="img/zishi/schedule.gif"></image>
-<image src="img/zishi/training.png"></image>
 <image src="img/wepark/space.png"></image>
+<h3>Device Status</h3>
+<div>On the basis of the original interface, I designed a more integrated device status page, so that users can easily view, connect, add devices, and set the standard posture of the device.</div>
+<image src="img/zishi/device.gif"></image>
+<image src="img/wepark/space.png"></image>
+<h3>Training Schedule</h3>
+<div>In order to make the overall training more planned, I designed the schedule module. In this module, users can plan a week's training as a whole according to their own conditions and the advice of the physiotherapist. Meanwhile, it also improves the consistency of training.</div>
+<image src="img/zishi/schedule.gif"></image>
+<image src="img/wepark/space.png"></image>
+<h3>Video Training</h3>
+<div>Compared to the original version using gif for movements demonstration, in the new version, I use live video as a demonstration to guide patients in training. For the seniors, videos are easier to understand and follow than animations.</div><br><br>
 <image src="img/zishi/training.gif"></image>
-<image src="img/zishi/therapist.png"></image>
+<image src="img/wepark/space.png"></image>
+<h3>Therapist Contact</h3>
+<div>In order to improve the efficiency of communication with the physiotherapist, in the new version, I added a dialogue function with the physiotherapist, and can send recent training results with one click. In this way, the physiotherapist can give the next training plan based on the training results.</div>
 <image src="img/zishi/therapist.gif"></image>
 <div style="text-align: center;"><a href="https://drive.google.com/file/d/1ufH5U1LX7bdma_p2NG0tHu9enC68kg21/view?usp=sharing">Download the interactive prototype of Zishi to test (Mac app)</a></div>
 <image src="img/wepark/space.png"></image>
 <image src="img/wepark/space.png"></image>
+<h2 style="color: #FFB46F;padding-top: 230px;" class="floattext">Interface Redesign Process</h2>
 <image src="img/zishi/process.png"></image>
 <image src="img/wepark/space.png"></image>
+<h2 style="color: #FFB46F;" >Original Interface Analysis</h2>
+<div>In order to better redesign the interface, I first conducted a preliminary analysis of the problems in the original interface.</div>
 <image src="img/zishi/previousui.png"></image>
+
+<h2 style="color: #FFB46F; padding-top: 370px;" class="floattext" >User Study</h2>
+<h3 class="floattext" style="padding-top: 455px;">Persona</h3>
+<div class="floattext" style="padding-top: 525px;padding-left: 285px; width: 65%;"><b style="color: #575757;">About</b><br><br>Mariam suffered a stroke when she was <b style="color: #00AFB9;">58</b> years old. After receiving the initial treatment, she started a long rehabilitation training. For the first 3 months, she took a in-person training with her physical therapist. Because Durham <b style="color: #00AFB9;">does not have a professional rehabilitation facility</b>, she can only ask her husband to drive her to the city where the physiotherapist is located. Each time she needs to spend more than <b style="color: #00AFB9;">3 hours on the road.</b><br>
+<br>Under the recommendation of her physical therapist, Mariam began to use Zishi for rehabilitation training at home, but encountered some problems during the use.<br><br>Because of the stroke, her <b style="color: #00AFB9;">hand movements</b> are not very flexible, and her speed is slow when she uses electronic devices. Because of her age, her <b style="color: #00AFB9;">eyesight</b> gradually deteriorated, she needs to use larger fonts when reading, and it <b style="color: #00AFB9;">takes a long time to learn</b> when she is exposed to new things. <br><br><br>
+<table>
+  <tr>
+    <td style="width: 45%;"><b style="color: #575757;">Goals</b></td>
+    <td><b style="color: #575757; padding-left: 25px;">Challenges</b></td>
+  </tr>
+  <tr>
+    <td  style="width: 45%;"><div>Under the premise of ensuring the standardization and effectiveness of movements, stroke rehabilitation training can be carried out more conveniently.</div></td>
+    <td><div style="padding-left: 25px;">Inconvenient hand movement<br>Vision loss<br>Learning difficulties</div></td>
+  </tr>
+</table>
+<br><br></div>
 <image src="img/zishi/persona.png"></image>
+<image src="img/wepark/space.png"></image>
+<h3>User Journey Map</h3>
+<div>Analyze the user's journey when using the original interface.</div>
 <image src="img/zishi/userjourney.png"></image>
+<h3 class="floattext" style="padding-top: 285px;">Scenario</h3>
 <image src="img/zishi/scenario.png"></image>
+<image src="img/wepark/space.png"></image>
+<h2 style="color: #FFB46F">User Interface Design</h2>
+<h3>Wireframes</h3>
 <image src="img/zishi/Interfacedesign.png"></image>
+<image src="img/wepark/space.png"></image>
+<h3>Visual Guidance</h3>
+<b style="color: #575757;font-size: 16px;">Touch Area</b>
 <image src="img/zishi/visualguidance.png"></image>
+<b style="color: #575757;font-size: 16px;">Grid</b>
+<div>Then, based on the touch area, set up the grid system to better organize the content.</div>
 <image src="img/zishi/grid.png"></image>
+<b style="color: #575757;font-size: 16px;">Card Module</b>
+<div>In order to facilitate the elderly with inconvenient hand movements, I chose to present most of the content in the form of card modules during redesign. This operation allows a larger click area when touch is needed.</div>
+<image src="img/zishi/card.png"></image>
+<b style="color: #575757;font-size: 16px;">Typography</b>
+<div>Taking into account the problem of poor eyesight of middle-aged and elderly people, when designing the interface, I chose more standard, clear, and larger fonts to ensure that they can easily identify.</div>
 <image src="img/zishi/typo.png"></image>
+<b style="color: #575757;font-size: 16px;">Color</b>
+<div>In terms of color selection, I chose colors with high saturation and high contrast to make the content more accessible.</div>
 <image src="img/zishi/color.png"></image>
+<h3>Interface Flow</h3>
 <image src="img/zishi/interface.png"></image>
-<image src="img/zishi/interaction.png"></image>
+<image src="img/wepark/space.png"></image>
+<h3>Interaction Design</h3>
+<div>As for interaction design, my initial prototype uses many different gestures (such as dragging, double-clicking, etc.) for interaction. However, in the user tests, it was found that many target users find it difficult to use multi-gesture interaction, especially when dragging actions are required, they are often interrupted for various reasons. Therefore, in the final version, I try to use more <b style="color: #00AFB9; font-size: 16px;">tapping</b> to achieve the target function, to make the interaction method as <b style="color: #00AFB9;font-size: 16px;">simple and unified</b> as possible.</div>
+<br><br>
 <image src="img/zishi/compare.gif"></image>
 <image src="img/wepark/space.png"></image>
 <image src="img/zishi/testing.png"></image>
+<h2 style="color: #FFB46F; padding-top: 485px;" class="floattext" >Summary</h2>
+<div class="floattext" style="padding-top: 580px;"><div style="width: 40%;">During this project, through several iterations, I deepened a lot of understanding of ui/ux design and became more familiar with the practical methods. UI/UX design is a user-centered. In this project, I pay more attention to meeting the actual needs of users and the achievability of functions, rather than simply designing for better visual or interactive effects.</div><br><div style="width:80%;">In the original project, my role is an integration designer. Through repeated communication with engineers and other designers, I have a good understanding of the product itself, which also laid the foundation for my the redesign. Together with the team, I won the second prize of <b style="color: #FFB46F; font-size: 16px;">the China-US Youth Maker Competition</b> with the Zishi smart interactive garment.</div></div>
 <image src="img/zishi/summary.png"></image>
+<div>Although the redesigned interface improves many deficiencies of the old version and integrates many new functions, it also makes the development more difficult. For the next step, I hope that the new interface can be developed and tested as soon as possible, and put into the market together with Zishi’s garment, so that more patients can benefit from it.</div>
 <image src="img/wepark/space.png"></image>
 <table>
   <tr>
-    <th style="text-align: left;"><a href="index.html">&larr; Main Page</a></th>
+    <th style="text-align: left;"><a href="PackPal.html">&larr; Last Project: Packpal</a></th>
     <th style="text-align: center;"><a href="#top"> Back to Top</a></th>
-    <th style="text-align: right;"><a href="wepark.html">WePark &rarr;</a></th>
+    <th style="text-align: right;"><a href="wepark.html">Next Project: WePark &rarr;</a></th>
   </tr>
 </table>
 <image src="img/wepark/space.png"></image>
 </div>
+</section>
 
 
 <!--nav-->

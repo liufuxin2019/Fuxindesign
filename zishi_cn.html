@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/zishi/icon.png"/>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+</head>
+<title>姿式 - 智能交互服装的用户界面设计</title>
+<body>
+	<section class="section section--menu" id="Prospero">
+      <nav class="menu menu--prospero">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--current"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='index_cn.html';},150);">项目</a></li>
+          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='about_cn.html';},150);">关于我</a></li>
+          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='gallery_cn.html';},150);">相册</a></li>
+          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='others_cn.html';},150);">其他</a></li>
+          <li class="menu__item"><a class="menu__link" onclick="javascript:setTimeout(function(){location.href='zishi.html';},150);">EN</a></li>
+        </ul>
+      </nav>
+    </section>
+<section class="section--zishi" id="zishi">
+  <div class='container'>
+    <br>
+<br>
+<br>
+    <header><image src="img/zishi/main-cn.png"></image></header>
+  </div>
+</section>
+
+<section>
+<div class="container">
+  <h2>项目总览</h2>
+<image src="img/zishi/overview-cn.png"></image>
+<h2 class="floattext" style="padding-top: 165px; padding-left: 385px;">项目背景</h2>
+<p class="floattext" style="padding-top: 260px; padding-left: 385px; width: 62%;" >Zishi是汉语中“姿式”的发音，意为姿势和公式。 在这个项目中，我主要致力于通过连接到智能服装的界面设计指导中风患者进行实时术后康复训练。
+<br><br>
+考虑到患者的实际康复情况，Zishi的界面主要呈现在横向平板电脑和智能可穿戴设备上。</p>
+<image src="img/zishi/background.png"></image>
+<h2 class="floattext" style="padding-top: 70px;">问题阐述</h2>
+<div class="floattext" style="width: 45%; padding-top: 165px;">当中风患者接受康复训练的时候，往往会面临<b>肌肉代偿</b>的困扰。<br><br>
+肌肉代偿可以被定义为患者做动作时，作为训练目标的肌肉因为病痛影响出现疲劳状态，为了完成动作，起协助作用的肌肉承担了完成动作的主要工作。代偿的存在使得患者的康复<b>训练效率大大降低</b>，有时候甚至会对患者造成<b>二次伤害</b>。</div>
+<image src="img/zishi/problem.png"></image>
+<h2 class="floattext" style="padding-top: 440px; padding-left: 435px;">系统组成</h2>
+<div class="floattext" style="padding-top: 535px; padding-left: 435px; width: 65%;">为了减少代偿对康复训练的影响，Zishi智能互动服装配备了一个柔性传感器模块。传感器模块被分别放置在患者的胸锁关节和肩锁关节，通过测量两个关节的位置变化来计算患者的动作情况。<br><br>
+根据动作记录结果，微型处理器会判断动作是否符合理疗师建议的范围，并将判断结果通过用户界面、声音和衣物上的震动装置反馈给用户，从而对患者的康复训练提供协助和指导。使患者在无法前往医院时也可以独自在家进行训练。</div>
+<image src="img/zishi/system-cn.png"></image>
+<h2>设计要点</h2><br>
+<h3>注册问卷</h3>
+<div>在重新设计界面时，我添加了一个注册时的调查问卷，让系统可以对患者的基本情况、训练阶段等有所了解，为后续推荐合适的训练打下基础。</div>
+<image src="img/zishi/signup.gif"></image>
+<image src="img/wepark/space.png"></image>
+<h3>设备状态</h3>
+<div>在原始页面中，连接设备需要在不同页面进行多步操作。所以在新版界面中，为了减少用户的操作步骤，将相关操作整合在了一个页面中。使患者可以更加简单地完成设备连接、设置标准姿式等操作，并查看设备连接状态和版本信息等。</div>
+<image src="img/zishi/device.gif"></image>
+<image src="img/wepark/space.png"></image>
+<h3>训练日程</h3>
+<div>为了使整体的训练更有计划性，使训练过程更加连贯，我添加了训练日程模块。在这个模块中，用户可以根据理疗师的建议和自身的训练情况制定训练计划。</div>
+<image src="img/zishi/schedule.gif"></image>
+<image src="img/wepark/space.png"></image>
+<h3>视频跟训</h3>
+<div>原版的用户界面采用的是动作动画的形式对用户进行训练指导。但是考虑到用户多为中老年人，对动画的形式不熟悉，在重新设计的过程中我采用了视频跟训的模式，使用户可以更好地理解动作要领，完成训练。</div><br><br>
+<image src="img/zishi/training.gif"></image>
+<image src="img/wepark/space.png"></image>
+<h3>对话理疗师</h3>
+<div>为了提高患者的沟通效率，我在界面中设计了理疗师沟通模块。可以使用户直接与理疗师进行对话，分享训练记录，使理疗师可以更快捷地根据训练记录了解用户的训练情况，并对接下来的训练给出指导和建议。此外，用户还可以在该模块中查看相关的文章，更全面的了解康复训练的基础知识。</div>
+<image src="img/zishi/therapist.gif"></image>
+<div style="text-align: center;"><a href="https://drive.google.com/file/d/1ufH5U1LX7bdma_p2NG0tHu9enC68kg21/view?usp=sharing">下载Zishi可交互原型体验（MAC/Principle）</a></div>
+<image src="img/wepark/space.png"></image>
+<image src="img/wepark/space.png"></image>
+<h2 style="color: #FFB46F;padding-top: 230px;" class="floattext">用户界面设计过程</h2>
+<image src="img/zishi/process-cn.png"></image>
+<image src="img/wepark/space.png"></image>
+<h2 style="color: #FFB46F;" >原始界面分析</h2>
+<div>为了更好地进行改进设计，我首先对原始界面存在的问题进行了分析。</div>
+<image src="img/zishi/previousui-cn.png"></image>
+
+<h2 style="color: #FFB46F; padding-top: 370px;" class="floattext" >用户研究</h2>
+<h3 class="floattext" style="padding-top: 455px;">用户画像</h3>
+<div class="floattext" style="padding-top: 525px;padding-left: 285px; width: 65%;"><b style="color: #575757;">关于</b><br><br>玛丽 <b style="color: #00AFB9;">58</b> 岁的时候不幸患了中风。在接受了手术治疗后，她开始进行术后康复训练。在最初的三个月，她都是前往医院与理疗师进行面对面的训练。但是她所在的城市并<b style="color: #00AFB9;">没有专业的训练机构</b>，所以只能由丈夫开车带她前往邻市进行。每次前往，她都需在来回路程上花费超过<b style="color: #00AFB9;">3个小时</b>。<br>
+<br>后来，在理疗师的建议下，她了解到Zishi智能可交互康复服装并购买体验，但是却在使用途中遇到了一些困难。<br><br>因为中风的原因，她的<b style="color: #00AFB9;">手部动作</b>不太灵活，进而使用电子设备的速度较慢。因为年龄的缘故，她的<b style="color: #00AFB9;">视力</b>也有所下降，需要使用更大的字体进行阅读，同时也需要更长的时间来<b style="color: #00AFB9;">学习</b>新事物。<br><br><br>
+<table>
+  <tr>
+    <td style="width: 45%;"><b style="color: #575757;">目标</b></td>
+    <td><b style="color: #575757; padding-left: 25px;">挑战</b></td>
+  </tr>
+  <tr>
+    <td  style="width: 45%;"><div>在保证动作标准性和有效性的前提下，可以更方便地进行中风康复训练。</div></td>
+    <td><div style="padding-left: 25px;">手部动作迟缓<br>视力下降<br>学习困难</div></td>
+  </tr>
+</table>
+<br><br></div>
+<image src="img/zishi/persona-cn.png"></image>
+<image src="img/wepark/space.png"></image>
+<h3>用户旅程地图</h3>
+<div>分析用户使用原有界面时的旅程。</div>
+<image src="img/zishi/userjourney.png"></image>
+<h3 class="floattext" style="padding-top: 285px;">使用场景</h3>
+<image src="img/zishi/scenario.png"></image>
+<image src="img/wepark/space.png"></image>
+<h2 style="color: #FFB46F">用户界面设计</h2>
+<h3>线框图</h3>
+<image src="img/zishi/Interfacedesign.png"></image>
+<image src="img/wepark/space.png"></image>
+<h3>视觉指导</h3>
+<b style="color: #575757;font-size: 16px;">触摸区域</b>
+<image src="img/zishi/visualguidance-cn.png"></image>
+<b style="color: #575757;font-size: 16px;">网格</b>
+<div>基于触摸区域分析，设定网格系统布局，更好地管理内容。</div>
+<image src="img/zishi/grid.png"></image>
+<b style="color: #575757;font-size: 16px;">卡片模式</b>
+<div>为了方便手部动作迟缓的中老年人，我在重新设计时选择以卡片模块的形式展示大部分内容。 当需要进行交互时，这样的设计拥有更大的可点击区域。</div>
+<image src="img/zishi/card.png"></image>
+<b style="color: #575757;font-size: 16px;">字体</b>
+<div>考虑到中老年人的视力减退，在设计字体时，我选择了更加标准、清晰、大的字体，以保证内容可以更容易被识别。</div>
+<image src="img/zishi/typo.png"></image>
+<b style="color: #575757;font-size: 16px;">颜色</b>
+<div>对于色彩的选择，我采用了饱和度高、对比度高的颜色搭配，以确保内容的可达性。</div>
+<image src="img/zishi/color.png"></image>
+<h3>界面流程</h3>
+<image src="img/zishi/interface.png"></image>
+<image src="img/wepark/space.png"></image>
+<h3>交互设计</h3>
+<div>对于交互设计，我的初始原型使用了许多不同的手势（例如拖动，双击等）进行交互。 但是，在用户测试中，发现许多目标用户很难使用多手势交互，尤其是在需要拖动动作时经常由于各种原因而中断。因此在迭代过程中，我对交互方式进行了更新，尽可能多得地采用<b style="color: #00AFB9; font-size: 16px;">点击</b>来实现目标功能，使交互方式尽可能<b style="color: #00AFB9;font-size: 16px;">简单且单一</b>。</div>
+<br><br>
+<image src="img/zishi/compare.gif"></image>
+<image src="img/wepark/space.png"></image>
+<image src="img/zishi/testing.png"></image>
+<h2 style="color: #FFB46F; padding-top: 525px;" class="floattext" >总结反思</h2>
+<div class="floattext" style="padding-top: 620px;"><div style="width: 40%;">在这个项目中，通过多次迭代，我加深了对UI/UX设计的理解，并更加熟悉使用方法。UI/UX设计是以用户为中心的。在项目进行过程中，我将更多的注意力放在满足用户的实际需求和功能的可实现性上，而不是单纯地追求更好的视觉或交互效果。</div><br><div style="width:80%;">在原始项目中，我担任的是整合设计师工作。通过与工程师和其他设计师的反复交流，我对产品本身的各个方面都有了深入的了解，这也为我进行重新设计奠定了基础。2018年，Zishi智能康复服装获得了 <b style="color: #FFB46F; font-size: 16px;">中美青年创客大赛二等奖</b>。</div></div>
+<image src="img/zishi/summary-cn.png"></image>
+<div>尽管重新设计的界面改善了旧版本的许多缺陷，并集成了许多新功能，但这也使开发更加困难。 下一步，我希望可以尽快开发和测试新的界面，并将其与Zishi的服装一起投放市场，以便更多的用户可以从中受益。</div>
+<image src="img/wepark/space.png"></image>
+<table>
+  <tr>
+    <th style="text-align: left;"><a href="Packpal.html">&larr; 上一个项目：Packpal</a></th>
+    <th style="text-align: center;"><a href="#top"> 返回顶部</a></th>
+    <th style="text-align: right;"><a href="wepark.html">下一个项目：WePark &rarr;</a></th>
+  </tr>
+</table>
+<image src="img/wepark/space.png"></image>
+</div>
+</section>
+
+
+<!--nav-->
+<script src="js/classienav.js"></script>
+  <script src="js/clipboard.min.js"></script>
+  <script>
+    (function() {
+      [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+        var menuItems = menu.querySelectorAll('.menu__link'),
+          setCurrent = function(ev) {
+            ev.preventDefault();
+
+            var item = ev.target.parentNode; // li
+
+            // return if already current
+            if( classie.has(item, 'menu__item--current') ) {
+              return false;
+            }
+            // remove current
+            classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+            // set current
+            classie.add(item, 'menu__item--current');
+          };
+
+        [].slice.call(menuItems).forEach(function(el) {
+          el.addEventListener('click', setCurrent);
+        });
+      });
+    })(window);
+  </script>
+</body>
