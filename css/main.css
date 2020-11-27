@@ -69,6 +69,12 @@ p {
   margin: 0 auto;
   padding: 0rem 2rem;
 }
+
+.container div{
+  padding-right: 0;
+}
+
+
 .gallerycontainer {
   max-width: 1200px;
   margin: 0 auto;
