@@ -236,14 +236,14 @@ image {
   margin: 20px;
   cursor: pointer;
   background-color: #fff;
-  border-style: solid;
+  /*border-style: solid;
   outline-style: solid;
-  outline-color: #F2B5D4;
-  outline-width: 1px; 
+  outline-color: #FFAC61;
+  outline-width: 5px; 
   outline-offset: 5px;
-  border-color: #7BDFF2; 
+  border-color: #9A3E97; 
   /*border-radius: 2px;*/
-  border-width: 1px;
+  border-width: 5px;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
@@ -338,7 +338,7 @@ button.light {
 }
 
 .section--mainpage{
-  background-image: url("MainPage.gif");
+  background-image: url("newmain.gif");
   margin: 0;
   width: 100%;
   background-repeat: no-repeat;
@@ -350,7 +350,7 @@ button.light {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #7BDFF2;
+  background-color: #6A2851;
   color: white;
   text-align: center;
 }
