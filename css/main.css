@@ -345,6 +345,14 @@ button.light {
   background-size: cover;
 }
 
+.section--maincn{
+  background-image: url("newmain-cn.gif");
+  margin: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .footer {
   position: relative;
   left: 0;
