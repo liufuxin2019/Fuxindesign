@@ -37,7 +37,7 @@
 .img-wrap:focus,
 .img-wrap:hover {
 	outline: solid;
-	outline-color: #6A2851;
+	outline-color: #ff7e69;
 	outline-width: 5px;
 }
 
