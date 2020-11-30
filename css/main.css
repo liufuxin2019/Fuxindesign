@@ -338,7 +338,7 @@ button.light {
 }
 
 .section--mainpage{
-  background-image: url("newmain.gif");
+  background-image: url("newmain.png");
   margin: 0;
   width: 100%;
   background-repeat: no-repeat;
@@ -346,7 +346,7 @@ button.light {
 }
 
 .section--maincn{
-  background-image: url("newmain-cn.gif");
+  background-image: url("newmain-cn.png");
   margin: 0;
   width: 100%;
   background-repeat: no-repeat;
